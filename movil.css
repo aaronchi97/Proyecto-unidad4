@@ -1,0 +1,410 @@
+/*----------------------PHONE------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  #slide-phone {
+    display: block;
+  }
+  #slider1 {
+    display: none;
+  }
+  #info-boda-phone {
+    line-height: 38px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  #barramenu {
+    display: block;
+    margin-right: 10px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  #barramenu:hover {
+    color: var(--color-secundario2);
+  }
+  .logoPrincipal {
+    width: 180px;
+    margin-left: 5px;
+  }
+
+  #slider1 {
+    width: 390px;
+  }
+
+  #slider1 .overview li {
+    float: left;
+    width: 390px;
+    height: auto;
+    margin: auto;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    margin: auto;
+  }
+
+  #slider1 .overview li img {
+    width: 80%;
+    object-fit: cover;
+    height: 200px;
+    filter: brightness(50%);
+    display: block;
+  }
+
+  .articulo-presentacion {
+    max-width: 300px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .articulo-presentacion h1 {
+    width: 90%;
+  }
+
+  .articulo-presentacion h2 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .articulo-presentacion p {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+
+  /*-------------------MENU PHONE-----------------------------*/
+
+  .menu-phone {
+    background-color: var(--color-secundario2);
+    /* height: 120px; */
+    padding: 20px;
+    /* margin-top: 100px; */
+  }
+
+  #cajamenu {
+    width: 100%;
+    /*  padding: 25px; */
+    text-align: start;
+    position: fixed;
+    top: 90px; /* Ajusta la posición superior según sea necesario */
+    left: 0;
+    z-index: 100;
+  }
+
+  #cajamenu ul {
+    list-style-type: none;
+  }
+
+  #cajamenu ul li {
+    border-bottom: 1px white dashed;
+    width: 100%;
+  }
+
+  #cajamenu ul li:hover {
+    background-color: rgba(41, 41, 41, 0.7);
+  }
+
+  #cajamenu ul li a {
+    color: white;
+    /* border: 1px white solid; */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+  }
+
+  /*------------------SECCION TARJETAS---------------------------------------*/
+
+  .tarjetas {
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .tarjeta {
+    width: 80%;
+    /* height: 300px; */
+    background-color: var(--color-secundario);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16px;
+  }
+  .tarjeta:hover {
+    background-color: var(--color-boton);
+    transform: scale(1.06);
+    transition: all 0.7s;
+  }
+
+  /*------------MODAL-----------------------------------------------------------*/
+  .contenido {
+    width: 85%;
+
+    text-align: center;
+  }
+
+  form {
+    width: 80%;
+  }
+  #btncerrar i {
+    font-size: 30px;
+  }
+
+  /*-----------Boton aariba---------------------------------*/
+
+  #btnUp {
+    font-size: 20px;
+  }
+
+  /*-----------------ABAOUT------------------------------------------*/
+  .sec-about-1 {
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-about-artic {
+    width: 100%;
+    height: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .artic {
+    display: flex;
+    width: 80%;
+    height: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  #artic1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #artic2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec-about-artic2 {
+    width: 100%;
+    height: 300px;
+  }
+  .imagen-artic2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #icon-about {
+    max-width: 200px;
+    position: absolute;
+    right: 20%;
+    bottom: -6%;
+  }
+  #icon-about2 {
+    max-width: 100%;
+  }
+
+  /*----------------------DIVISION DE SECCION-------------------------------------------------------*/
+
+  .div-fancy {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+  #img-div-fancy {
+    width: 150px;
+    transform: rotate(310deg);
+    position: absolute;
+    top: 60%;
+    left: 30%;
+  }
+  #img-div-fancy2 {
+    display: none;
+  }
+
+  /*-----------------------FANCY BOX-------------------------------------------------------------*/
+
+  .fancybox {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  /*-----------------VIDEO--------------------------------------------------*/
+
+  .modal-content {
+    width: 90%;
+    max-width: 800px;
+    height: 240px;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+  }
+  iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+  .sec-video {
+    min-height: 300px;
+    background-position: center;
+  }
+
+  /*------------------SECCIONES FOTOS-------------------------------------------------------*/
+
+  #icon-sec-fotos {
+    display: none;
+  }
+
+  /*-----index-----*/
+
+  .img-tarjeta-prin {
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  .img-tarjeta-prin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+
+  /*-----------------------CONTACTO FORM--------------------------------------------------------*/
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sec1 {
+    width: 80%;
+    height: 600px;
+    /*  border: 1px blue solid; */
+  }
+
+  /*-------------------FOOTER----------------------------------------------------------*/
+
+  footer {
+    height: 2000px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .artic-footer {
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .div-footer {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .iconos-footer i {
+    width: 50%;
+    font-size: 20px;
+    color: var(--color-fondo);
+    cursor: pointer;
+  }
+  .iconos-footer i:hover {
+    font-size: 20px;
+    color: var(--color-boton);
+  }
+
+  /*------------SECCION SERVICIOS-------------------------------------*/
+
+  .servicios {
+    width: 100%;
+    height: 1500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /*-----------------------Seccion Productos----------------------------------------*/
+
+  .productos {
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.nombre-de-clase ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  /* height: 50px;
+       border: 2px #333 solid;
+       display: flex;
+       justify-content: center;
+       align-items: center; */
+}
+.nombre-de-clase ul li {
+  /* display: inline;
+       background-color: red;
+       margin-bottom: 5px; */
+  width: var();
+  height: var();
+}
+.nombre-de-clase ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var();
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
