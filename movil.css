@@ -311,6 +311,11 @@
 
   /*-----------------VIDEO--------------------------------------------------*/
 
+  .video-responsive {
+    width: 370px;
+    margin: 0 auto;
+    /* border: 2px red solid; */
+  }
   .modal-content {
     width: 90%;
     max-width: 800px;

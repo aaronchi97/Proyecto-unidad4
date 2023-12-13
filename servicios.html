@@ -382,6 +382,33 @@
       </figure>
     </section> -->
 
+    <!---------------------------VIDEO----------------------------------------------------------------------------------------->
+
+    <section id="video-2" class="sec-video ancho">
+      <a href="#" id="openModal"><i class="fa-solid fa-circle-play"></i></a>
+    </section>
+
+    <div id="modalContainer" class="modal-container">
+      <div class="modal-content">
+        <span id="closeModal" class="close-modal"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></span>
+        <article class="video-responsive">
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/G7Ke_OoG_QM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </div>
+    </div>
+
     <!--------------------------DIVISOR DE SECCIONES---------------------------------------------------------------------------------------------->
     <div class="wow animate__animated animate__fadeInTopLeft div-fancy ancho">
       <div class="texto-div-fancy">
@@ -921,6 +948,31 @@
           "https://www.google.com/search?q=" + encodedSearchTerm;
         window.location.href = googleSearchUrl;
       }
+    </script>
+
+    <script>
+      //MODAL VIDEO----------------------------------------------
+      var openModalLink = document.getElementById("openModal");
+      var closeModalBtn = document.getElementById("closeModal");
+      var modalContainer = document.getElementById("modalContainer");
+      var videoFrame = document.getElementById("videoFrame");
+      var player;
+
+      openModalLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        modalContainer.style.display = "block";
+      });
+
+      closeModalBtn.addEventListener("click", function () {
+        modalContainer.style.display = "none";
+
+        // Pausar el video
+        player.pauseVideo();
+      });
+
+      videoFrame.addEventListener("load", function () {
+        videoFrame.style.display = "block";
+      });
     </script>
   </body>
 </html>
