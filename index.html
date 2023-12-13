@@ -40,7 +40,6 @@
 
     <!---Responsiveslides-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="responsiveslides.min.js"></script>
 
     <!-- Font awesome-->
     <script
@@ -63,7 +62,7 @@
     <title>PROYECTO</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav>
       <figure class="logoPrincipal">
         <img src="img/logo.png" alt="" />
       </figure>
@@ -94,146 +93,86 @@
       </ul>
     </div>
 
-    <div id="div-espacio"></div>
+    <!-- ------------------------------------------------ -->
 
-    <div id="slider1">
-      <div class="viewport">
-        <a class="buttons prev" href="#"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <a class="buttons next" href="#"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
+    <!-- <div id="div-espacio"></div> -->
 
-        <ul class="overview">
-          <li>
-            <img src="img/boda/foto1.jpg" />
-            <article class="articulo-presentacion">
-              <h2>Tenemos toda la capacitación & experiencia</h2>
-              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
-              <p>
-                Con Lovex tus sueños se haran realidad con estas increibles
-                opciones de boda que tenemos para ti
-              </p>
-              <div class="botones-presentacion">
-                <div class="boton-presentacion1">
-                  <a id="btn-acercade" href="#">Acerca de </a>
-                </div>
-                <div class="boton-presentacion2">
-                  <a id="btn-sabermas1" href="#">Saber más</a>
-                </div>
+    <!-- ------------------------------------------------ -->
+
+    <!-- -----------SLIDE CON FLECHAS------------------------- -->
+
+    <script src="responsiveslides.min.js"></script>
+
+    <div class="callbacks_container">
+      <a class="flecha-slide-left" href="">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a class="flecha-slide-right" href="">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="img/boda/foto1.jpg" alt="" />
+          <article class="articulo-presentacion">
+            <h2>Descubre la magia de tu día especial en LOVEX</h2>
+            <h1>
+              La plataforma perfecta para planificar la boda de tus sueños
+            </h1>
+            <!-- <p>Con Lovex haz tus sueños realidad</p> -->
+            <div class="botones-presentacion">
+              <div class="boton-presentacion1">
+                <a id="btn-acercade" href="#">Acerca de </a>
               </div>
-
-              <div class="botones-play">
-                <a id="startslider" href="#"
-                  ><i class="fa-solid fa-circle-play"></i
-                ></a>
-                <a id="stopslider" href="#"
-                  ><i class="fa-solid fa-circle-pause"></i
-                ></a>
+              <div class="boton-presentacion2">
+                <a id="btn-sabermas1" href="#">Saber más</a>
               </div>
-
-              <figure class="decoracion-presentacion">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-
-              <figure class="decoracion-presentacion2">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-            </article>
-          </li>
-          <li>
-            <img src="img/boda/foto2.jpg" />
-            <article class="articulo-presentacion">
-              <h2>La boda que siempre has estado soñando</h2>
-              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
-              <p>
-                Con Lovex tus sueños se haran realidad con estas increibles
-                opciones de boda que tenemos para ti
-              </p>
-              <div class="botones-presentacion">
-                <div class="boton-presentacion1">
-                  <a id="btn-acercade" href="#">Acerca de </a>
-                </div>
-                <div class="boton-presentacion2">
-                  <a id="btn-sabermas2" href="#">Saber más</a>
-                </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <img src="img/boda/foto2.jpg" alt="" />
+          <article class="articulo-presentacion">
+            <h2>En todos los momentos especiales</h2>
+            <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
+            <!-- <p>Con Lovex haz tus sueños realidad</p> -->
+            <div class="botones-presentacion">
+              <div class="boton-presentacion1">
+                <a id="btn-acercade" href="#">Acerca de </a>
               </div>
-
-              <div class="botones-play">
-                <a id="startslider2" href="#"
-                  ><i class="fa-solid fa-circle-play"></i
-                ></a>
-                <a id="stopslider2" href="#"
-                  ><i class="fa-solid fa-circle-pause"></i
-                ></a>
+              <div class="boton-presentacion2">
+                <a id="btn-sabermas2" href="#">Saber más</a>
               </div>
-
-              <figure class="decoracion-presentacion">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-
-              <figure class="decoracion-presentacion2">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-            </article>
-          </li>
-
-          <li>
-            <img src="img/boda/foto3.jpg" />
-            <article class="articulo-presentacion">
-              <h2>En todos los momentos especiales</h2>
-              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
-              <p>
-                Con Lovex tus sueños se haran realidad con estas increibles
-                opciones de boda que tenemos para ti
-              </p>
-              <div class="botones-presentacion">
-                <div class="boton-presentacion1">
-                  <a id="btn-acercade" href="#">Acerca de </a>
-                </div>
-                <div class="boton-presentacion2">
-                  <a id="btn-sabermas3" href="#">Saber más</a>
-                </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <img src="img/boda/foto3.jpg" alt="" />
+          <article class="articulo-presentacion">
+            <h2>En todos los momentos especiales</h2>
+            <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
+            <!-- <p>Con Lovex haz tus sueños realidad</p> -->
+            <div class="botones-presentacion">
+              <div class="boton-presentacion1">
+                <a id="btn-acercade" href="#">Acerca de </a>
               </div>
-
-              <div class="botones-play">
-                <a id="startslider3" href="#"
-                  ><i class="fa-solid fa-circle-play"></i
-                ></a>
-                <a id="stopslider3" href="#"
-                  ><i class="fa-solid fa-circle-pause"></i
-                ></a>
+              <div class="boton-presentacion2">
+                <a id="btn-sabermas3" href="#">Saber más</a>
               </div>
-
-              <figure class="decoracion-presentacion">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-
-              <figure class="decoracion-presentacion2">
-                <img src="img/png/decoracion1.png" alt="" />
-              </figure>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!---------------------------------------RESPONSIVESLIDE PARA MENU------------------------------------>
-
-    <section id="slide-phone" class="sec-fotos ancho">
-      <ul class="rslides">
-        <li><img src="img/boda/foto1.jpg" alt="" /></li>
-        <li><img src="img/boda/foto2.jpg" alt="" /></li>
-        <li><img src="img/boda/foto3.jpg" alt="" /></li>
+            </div>
+          </article>
+        </li>
       </ul>
 
-      <div id="info-boda-phone" class="info">
-        <h1>Hacemos vivir tus momentos en grande</h1>
-      </div>
+      <figure class="png-titulo">
+        <img src="img/png/decoracion1.png" alt="" />
+      </figure>
 
-      <img id="icon-sec-fotos" src="img/png/icono-imagen1.png" alt="" />
-    </section>
+      <figure class="png2-titulo">
+        <img src="img/png/02.png" alt="" />
+      </figure>
+    </div>
+
+    <!-- ------------------------------------------------ -->
 
     <!-- 
         <section class="splide" aria-label="Basic Structure Example">
@@ -289,7 +228,9 @@
             </div>    
           </section> -->
 
-    <section class="tarjetas ancho">
+    <!-- TARJETAS-------------------------------------------- -->
+
+    <section class="tarjetas">
       <article class="wow animate__animated animate__fadeInLeft tarjeta">
         <i class="fa-regular fa-heart"></i>
         <h1>Satisfaction Guarantee</h1>
@@ -361,7 +302,7 @@
     <!------------------------------MODAL ICONO BUSCAR--------------------------------------------->
 
     <div id="nodal2">
-      <section class="contenido-bucar ancho">
+      <section class="contenido-buscar ancho">
         <input id="btnserch" type="text" placeholder="Buscar..." />
         <a href="https://www.google.com/search " class="search-link"
           ><i class="fa-solid fa-magnifying-glass"></i
@@ -435,9 +376,12 @@
 
     <!--------------------------DIVISOR DE SECCIONES---------------------------------------------------------------------------------------------->
     <div class="wow animate__animated animate__fadeInTopLeft div-fancy ancho">
-      <p>Nuestra galeria</p>
-      <h1>Capturando los mejores</h1>
-      <h2>Momentos</h2>
+      <div class="texto-div-fancy">
+        <p>Nuestra galeria</p>
+        <h1>Capturando los mejores</h1>
+        <h2>Momentos</h2>
+      </div>
+
       <img id="img-div-fancy2" src="img/png/divider.png" alt="" />
       <img id="img-div-fancy" src="img/png/02.png" alt="" />
     </div>
@@ -535,9 +479,12 @@
 
     <!--------------------------DIVISOR DE SECCIONES---------------------------------------------------------------------------------------------->
     <div class="wow animate__animated animate__fadeInTopLeft div-fancy ancho">
-      <p>Vive tu boda al máximo</p>
-      <h1>Capturando los mejores</h1>
-      <h2>Momentos</h2>
+      <div class="texto-div-fancy">
+        <p>Vive tu boda al máximo</p>
+        <h1>Capturando los mejores</h1>
+        <h2>Momentos</h2>
+      </div>
+
       <img id="img-div-fancy2" src="img/png/divider.png" alt="" />
       <img id="img-div-fancy" src="img/png/02.png" alt="" />
     </div>
@@ -660,13 +607,45 @@
       </div>
     </section>
 
+    <!---------------------------------------RESPONSIVESLIDE PARA MENU------------------------------------>
+
+    <section id="slide-phone" class="sec-fotos ancho">
+      <ul class="rslides">
+        <li><img src="img/boda/foto1.jpg" alt="" /></li>
+        <li><img src="img/boda/foto2.jpg" alt="" /></li>
+        <li><img src="img/boda/foto3.jpg" alt="" /></li>
+      </ul>
+
+      <div id="info-boda-phone" class="info">
+        <h1>Hacemos vivir tus momentos en grande</h1>
+      </div>
+
+      <img id="icon-sec-fotos" src="img/png/icono-imagen1.png" alt="" />
+    </section>
+
+    <!-- 
+    CURVAS ---------------------------------------------------------------------- -->
+
+    <div style="height: 150px; overflow: hidden">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-0.00,50.10 C222.16,225.50 349.20,-50.10 519.00,78.16 L500.00,150.33 L-0.00,150.33 Z"
+          style="stroke: none; fill: #edf3f8"
+        ></path>
+      </svg>
+    </div>
+
     <!---------------------------Boton subir---------------------------------------------------------------------------------------------->
 
     <a id="btnUp" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
 
     <!----------------------------------FOODER------------------------------------------------------------->
 
-    <footer class="ancho">
+    <footer>
       <article class="wow animate__animated animate__fadeInRight artic-footer">
         <figure class="img-footer"><img src="img/logo.png" alt="" /></figure>
         <p>
@@ -721,7 +700,7 @@
       </div>
     </footer>
 
-    <div class="parte-div ancho">
+    <div class="parte-div">
       <p>Aaron Enrique Chi Béjar</p>
 
       <figure class="iconos-footer">
@@ -795,56 +774,6 @@
         } else {
           btnup.style.display = "none";
         }
-      });
-
-      //CARRUSEL
-      $(document).ready(function () {
-        $("#slider1").tinycarousel({
-          interval: true,
-          animationTime: 2000,
-          intervalTime: 6000,
-        });
-
-        var slider1 = $("#slider1").data("plugin_tinycarousel");
-
-        // The start method starts the interval.
-
-        $("#startslider").click(function () {
-          slider1.start();
-
-          return false;
-        });
-
-        $("#startslider2").click(function () {
-          slider1.start();
-
-          return false;
-        });
-
-        $("#startslider3").click(function () {
-          slider1.start();
-
-          return false;
-        });
-        // The stop method stops the interval.
-
-        $("#stopslider").click(function () {
-          slider1.stop();
-
-          return false;
-        });
-
-        $("#stopslider2").click(function () {
-          slider1.stop();
-
-          return false;
-        });
-
-        $("#stopslider3").click(function () {
-          slider1.stop();
-
-          return false;
-        });
       });
 
       //CARRUSEL FOTOS GALERIA
@@ -990,6 +919,32 @@
         $(".contenido4").slideToggle();
         $(".mas4").toggleClass("desaparecer");
         $(".titulo4").toggleClass("text");
+      });
+    </script>
+
+    <script>
+      $(function () {
+        $("#slider4").responsiveSlides({
+          auto: false,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+            $(".events").append("<li>before event fired.</li>");
+          },
+          after: function () {
+            $(".events").append("<li>after event fired.</li>");
+          },
+        });
+      });
+    </script>
+
+    <!-- FUNCION DE MENU VISIBLE CON SCROLL--------------------------------------- -->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu", window.scrollY > 0);
       });
     </script>
   </body>

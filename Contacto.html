@@ -63,7 +63,7 @@
     <title>Contacto</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav>
       <figure class="logoPrincipal">
         <img src="img/logo.png" alt="" />
       </figure>
@@ -73,6 +73,11 @@
         <li><a href="servicios.html"> Servicios</a></li>
         <li><a href="shop.html"> Productos</a></li>
         <li><a href="Contacto.html"> Contacto</a></li>
+        <li>
+          <a id="icono-buscar" href="#"
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
       </ul>
 
       <div id="barramenu">
@@ -89,12 +94,23 @@
       </ul>
     </div>
 
-    <div id="div-espacio"></div>
+    <!------------------------------MODAL ICONO BUSCAR--------------------------------------------->
+
+    <div id="nodal2">
+      <section class="contenido-buscar ancho">
+        <input id="btnserch" type="text" placeholder="Buscar..." />
+        <a href="https://www.google.com/search " class="search-link"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+      </section>
+    </div>
+
+    <!-- <div id="div-espacio"></div> -->
 
     <!----------------------------PRESENTACION SECCIONES------------------------------------------------->
 
-    <section class="sec-fotos ancho">
-      <ul class="rslides">
+    <section class="sec-fotos">
+      <ul class="rslides2">
         <li><img src="img/fondos/fondo-copas.jpg" alt="" /></li>
         <li><img src="img/galeria/foto11.jpg" alt="" /></li>
         <li><img src="img/fondos/fondo-flores.jpg" alt="" /></li>
@@ -119,11 +135,10 @@
             </div>
             <h2>Dirección de oficina</h2>
           </div>
-
-          <div class="acordeon_contenido contenido1">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>25/B Milford, New York, USA</p>
-          </div>
+        </div>
+        <div class="acordeon_contenido contenido1">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>25/B Milford, New York, USA</p>
         </div>
 
         <div class="wow animate__animated animate__fadeInLeft acordeon">
@@ -134,11 +149,10 @@
             </div>
             <h2>Llamanos</h2>
           </div>
-
-          <div class="acordeon_contenido contenido2">
-            <i class="fa-solid fa-phone-volume"></i>
-            <p>876-223--123-1</p>
-          </div>
+        </div>
+        <div class="acordeon_contenido contenido2">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>876-223--123-1</p>
         </div>
 
         <div class="wow animate__animated animate__fadeInLeft acordeon">
@@ -219,13 +233,29 @@
       </section>
     </section>
 
+    <!-- 
+    CURVAS ---------------------------------------------------------------------- -->
+
+    <div style="height: 150px; overflow: hidden">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-0.00,50.10 C222.16,225.50 349.20,-50.10 519.00,78.16 L500.00,150.33 L-0.00,150.33 Z"
+          style="stroke: none; fill: #edf3f8"
+        ></path>
+      </svg>
+    </div>
+
     <!---------------------------Boton subir---------------------------------------------------------------------------------------------->
 
     <a id="btnUp" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
 
     <!----------------------------------FOODER------------------------------------------------------------->
 
-    <footer class="ancho">
+    <footer>
       <article class="artic-footer">
         <figure class="img-footer"><img src="img/logo.png" alt="" /></figure>
         <p>
@@ -275,7 +305,7 @@
       </div>
     </footer>
 
-    <div class="parte-div ancho">
+    <div class="parte-div">
       <p>Aaron Enrique Chi Béjar</p>
 
       <figure class="iconos-footer">
@@ -288,7 +318,7 @@
     <script>
       //RESPONSIVESLIDES
       $(function () {
-        $(".rslides").responsiveSlides({});
+        $(".rslides2").responsiveSlides({});
       });
 
       $(".titulo1").click(function () {
@@ -379,6 +409,57 @@
 
       //WOW-----------------------------------------------------------------------
       new WOW().init();
+    </script>
+
+    <!-- FUNCION DE MENU VISIBLE CON SCROLL--------------------------------------- -->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu", window.scrollY > 0);
+      });
+    </script>
+
+    <script>
+      //MODAL BOTON BUCAR------------------------------------------------------------------
+      var nodal2 = document.getElementById("nodal2");
+      var btnbucar = document.getElementById("icono-buscar");
+
+      var btnSearch = document.getElementById("btnsearch");
+
+      btnbucar.onclick = function () {
+        nodal2.style.display = "flex";
+      };
+
+      //para utizar todo el area del navegador para cerrar
+      window.onclick = function (event) {
+        if (event.target == nodal2) {
+          nodal2.style.display = "none";
+        }
+      };
+
+      const searchContainer = document.querySelector(".search-container");
+      const searchInput = document.querySelector('input[type="text"]');
+
+      searchContainer.addEventListener("click", function (event) {
+        // Cuando se hace clic en el contenedor de búsqueda, enfocar el campo de entrada
+        searchInput.focus();
+      });
+
+      //busquedas reales en google
+      btnSearch.addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          searchGoogle();
+        }
+      });
+
+      function searchGoogle() {
+        var searchTerm = btnSearch.value;
+        var encodedSearchTerm = encodeURIComponent(searchTerm);
+        var googleSearchUrl =
+          "https://www.google.com/search?q=" + encodedSearchTerm;
+        window.location.href = googleSearchUrl;
+      }
     </script>
   </body>
 </html>

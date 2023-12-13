@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--CARRUSEL 2 -->
+    <link rel="stylesheet" href="libreria_carrousel_js/carrousel.css" />
 
     <!--ESTILOS GENERALES  -->
     <link rel="stylesheet" href="estilo.css" />
@@ -63,7 +65,7 @@
     <title>Productos</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav>
       <figure class="logoPrincipal">
         <img src="img/logo.png" alt="" />
       </figure>
@@ -73,6 +75,11 @@
         <li><a href="servicios.html"> Servicios</a></li>
         <li><a href="shop.html"> Productos</a></li>
         <li><a href="Contacto.html"> Contacto</a></li>
+        <li>
+          <a id="icono-buscar" href="#"
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
       </ul>
 
       <div id="barramenu">
@@ -89,14 +96,25 @@
       </ul>
     </div>
 
-    <div id="div-espacio"></div>
+    <!------------------------------MODAL ICONO BUSCAR--------------------------------------------->
+
+    <div id="nodal2">
+      <section class="contenido-buscar ancho">
+        <input id="btnserch" type="text" placeholder="Buscar..." />
+        <a href="https://www.google.com/search " class="search-link"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+      </section>
+    </div>
+
+    <!-- <div id="div-espacio"></div> -->
 
     <!----------------------------PRESENTACION SECCIONES------------------------------------------------->
 
-    <section class="sec-fotos ancho">
+    <section class="sec-fotos">
       <ul class="rslides">
         <li><img src="img/shop/fondo-decoracion.jpg" alt="" /></li>
-        <li><img src="img/shop/pastel1.jpg" alt="" /></li>
+        <li><img src="img/shop/fondo-anillos.jpg" alt="" /></li>
         <li><img src="img/shop/ramo2.jpg" alt="" /></li>
       </ul>
 
@@ -108,10 +126,10 @@
     </section>
 
     <!----------------------------SECCION PRODUCTOS-------------------------------------------->
-
+    <!-- 
     <br /><br /><br />
 
-    <section class="productos ancho">
+    <section class="productos">
       <figure class="wow animate__animated animate__fadeInLeft img-productos">
         <img src="img/shop/pastel3.jpg" alt="" />
 
@@ -261,7 +279,194 @@
       <h2>Queridos</h2>
       <img id="img-div-fancy2" src="img/png/divider.png" alt="" />
       <img id="img-div-fancy" src="img/png/02.png" alt="" />
+    </div> -->
+
+    <!---------------------------SECCION PRODUCTOS CON CARRUSEL PRUEBA------------------------->
+    <section class="sec-1 ancho" id="carousel">
+      <div class="contenedor" id="slide-container">
+        <article class="slide" data-slideIndex="0">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/pastel3.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Wedding Cake</a>
+              <p>$ 900</p>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="1">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/pastel1.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Wedding Cake</a>
+              <p>$ 1300</p>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="2">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/pastel2.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Wedding Cake</a>
+              <p>$ 799</p>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="3">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/ramo1.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Ramo</a>
+              <p>$ 700</p>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="4">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/ramo2.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Ramo</a>
+              <p>$ 2300</p>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="5">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-productos"
+          >
+            <img src="img/shop/fondo-ramos.jpg" alt="" />
+
+            <p id="oferta">Sale</p>
+
+            <div class="fondo-img-producto">
+              <i id="icon-1" class="fa-regular fa-heart"></i>
+              <i id="icon-2" class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div class="div-productos">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <a href="#">Ramo</a>
+              <p>$ 500</p>
+            </div>
+          </figure>
+        </article>
+      </div>
+
+      <!-- FLECHAS INDICADORAS  -->
+
+      <div class="slide-buttons-2">
+        <a href="#" id="back-button" class="arrow back"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></a>
+        <a href="#" id="forward-button" class="arrow forward"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <div class="slide-indicators ancho">
+      <div class="slide-indicator active"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
     </div>
+
+    <script src="libreria_carrousel_js/carrousel.js"></script>
 
     <!-------------------------Fancy Box----------------------------------->
 
@@ -327,13 +532,29 @@
       </a>
     </section>
 
+    <!-- 
+    CURVAS ---------------------------------------------------------------------- -->
+
+    <div style="height: 150px; overflow: hidden">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-0.00,50.10 C222.16,225.50 349.20,-50.10 519.00,78.16 L500.00,150.33 L-0.00,150.33 Z"
+          style="stroke: none; fill: #edf3f8"
+        ></path>
+      </svg>
+    </div>
+
     <!---------------------------Boton subir---------------------------------------------------------------------------------------------->
 
     <a id="btnUp" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
 
     <!----------------------------------FOODER------------------------------------------------------------->
 
-    <footer class="ancho">
+    <footer>
       <article class="artic-footer">
         <figure class="img-footer"><img src="img/logo.png" alt="" /></figure>
         <p>
@@ -383,7 +604,7 @@
       </div>
     </footer>
 
-    <div class="parte-div ancho">
+    <div class="parte-div">
       <p>Aaron Enrique Chi Béjar</p>
 
       <figure class="iconos-footer">
@@ -482,6 +703,65 @@
       videoFrame.addEventListener("load", function () {
         videoFrame.style.display = "block";
       });
+    </script>
+
+    <!-- FUNCION DE MENU VISIBLE CON SCROLL--------------------------------------- -->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu", window.scrollY > 0);
+      });
+    </script>
+
+    <script>
+      $(".slide-indicator").click(function () {
+        $(" .slide-indicator").removeClass("active"); //quita la clase "active"
+        $(this).addClass("active"); //Agrega la clase active al tab seleccionado
+        //$(".tabs_contenido-t1").hide(); //Oculta el contenido de la pestaña
+      });
+    </script>
+
+    <script>
+      //MODAL BOTON BUCAR------------------------------------------------------------------
+      var nodal2 = document.getElementById("nodal2");
+      var btnbucar = document.getElementById("icono-buscar");
+
+      var btnSearch = document.getElementById("btnsearch");
+
+      btnbucar.onclick = function () {
+        nodal2.style.display = "flex";
+      };
+
+      //para utizar todo el area del navegador para cerrar
+      window.onclick = function (event) {
+        if (event.target == nodal2) {
+          nodal2.style.display = "none";
+        }
+      };
+
+      const searchContainer = document.querySelector(".search-container");
+      const searchInput = document.querySelector('input[type="text"]');
+
+      searchContainer.addEventListener("click", function (event) {
+        // Cuando se hace clic en el contenedor de búsqueda, enfocar el campo de entrada
+        searchInput.focus();
+      });
+
+      //busquedas reales en google
+      btnSearch.addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          searchGoogle();
+        }
+      });
+
+      function searchGoogle() {
+        var searchTerm = btnSearch.value;
+        var encodedSearchTerm = encodeURIComponent(searchTerm);
+        var googleSearchUrl =
+          "https://www.google.com/search?q=" + encodedSearchTerm;
+        window.location.href = googleSearchUrl;
+      }
     </script>
   </body>
 </html>

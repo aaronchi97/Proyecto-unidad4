@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="movil.css" />
 
+    <!--CARRUSEL 2 -->
+    <link rel="stylesheet" href="libreria_carrousel_js/carrousel.css" />
+
     <!-- java script -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
@@ -63,7 +66,7 @@
     <title>Servicios</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav>
       <figure class="logoPrincipal">
         <img src="img/logo.png" alt="" />
       </figure>
@@ -73,6 +76,11 @@
         <li><a href="servicios.html"> Servicios</a></li>
         <li><a href="shop.html"> Productos</a></li>
         <li><a href="Contacto.html"> Contacto</a></li>
+        <li>
+          <a id="icono-buscar" href="#"
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
       </ul>
 
       <div id="barramenu">
@@ -89,11 +97,22 @@
       </ul>
     </div>
 
-    <div id="div-espacio"></div>
+    <!------------------------------MODAL ICONO BUSCAR--------------------------------------------->
+
+    <div id="nodal2">
+      <section class="contenido-buscar ancho">
+        <input id="btnserch" type="text" placeholder="Buscar..." />
+        <a href="https://www.google.com/search " class="search-link"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+      </section>
+    </div>
+
+    <!-- <div id="div-espacio"></div> -->
 
     <!----------------------------PRESENTACION SECCIONES------------------------------------------------->
 
-    <section class="sec-fotos ancho">
+    <section class="sec-fotos">
       <ul class="rslides">
         <li><img src="img/places/foto1.jpg" alt="" /></li>
         <li><img src="img/places/foto2.jpg" alt="" /></li>
@@ -107,9 +126,157 @@
       <img id="icon-sec-fotos" src="img/png/icono-imagen1.png" alt="" />
     </section>
 
+    <!---------------------------SECCION SERVICIOS CON CARRUSEL PRUEBA------------------------->
+    <section class="sec-1 ancho" id="carousel">
+      <div class="contenedor" id="slide-container">
+        <article class="slide" data-slideIndex="0">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-servicios"
+          >
+            <img src="img/shop/fondo-anillos.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Wedding Rings</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-right-long"></i></a>
+            </div>
+
+            <div class="icon-servicios"><i class="fa-solid fa-ring"></i></div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="1">
+          <figure
+            class="wow animate__animated animate__fadeInDown img-servicios"
+          >
+            <img src="img/galeria/foto4.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Video & Photograpy</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-right-long"></i></a>
+            </div>
+
+            <div class="icon-servicios">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="2">
+          <figure
+            class="wow animate__animated animate__fadeInRight img-servicios"
+          >
+            <img src="img/galeria/foto1.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Anniversary Program</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-right-long"></i></a>
+            </div>
+
+            <div class="icon-servicios">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="3">
+          <figure
+            class="wow animate__animated animate__fadeInLeft img-servicios"
+          >
+            <img src="img/places/foto1.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Wedding Registry</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-right-long"></i></a>
+            </div>
+
+            <div class="icon-servicios">
+              <i class="fa-solid fa-cash-register"></i>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="4">
+          <figure
+            class="wow animate__animated animate__fadeInDown img-servicios"
+          >
+            <img src="img/places/foto3.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Interior Decoration</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-fan"></i></a>
+            </div>
+
+            <div class="icon-servicios">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+          </figure>
+        </article>
+
+        <article class="slide" data-slideIndex="5">
+          <figure
+            class="wow animate__animated animate__fadeInRight img-servicios"
+          >
+            <img src="img/places/foto5.jpg" alt="" />
+
+            <div class="div-servicios">
+              <h1>Wedding Car</h1>
+              <p>
+                There are many variations of the read passages available but the
+                majority.
+              </p>
+              <a href="#">Ver más <i class="fa-solid fa-right-long"></i></a>
+            </div>
+
+            <div class="icon-servicios">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+          </figure>
+        </article>
+      </div>
+
+      <!-- FLECHAS INDICADORAS  -->
+
+      <div class="slide-buttons-2">
+        <a href="#" id="back-button" class="arrow back"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></a>
+        <a href="#" id="forward-button" class="arrow forward"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <div class="slide-indicators ancho">
+      <div class="slide-indicator active"></div>
+      <div class="slide-indicator"></div>
+      <div class="slide-indicator"></div>
+    </div>
+
+    <script src="libreria_carrousel_js/carrousel.js"></script>
+
     <!---------------------------SECCION SERVICIOS------------------------->
 
-    <br /><br /><br /><br />
+    <!-- <br /><br /><br /><br />
     <section class="servicios ancho">
       <figure class="wow animate__animated animate__fadeInLeft img-servicios">
         <img src="img/shop/fondo-anillos.jpg" alt="" />
@@ -142,6 +309,8 @@
           <i class="fa-solid fa-camera-retro"></i>
         </div>
       </figure>
+
+  
 
       <figure class="wow animate__animated animate__fadeInRight img-servicios">
         <img src="img/galeria/foto1.jpg" alt="" />
@@ -211,7 +380,266 @@
 
         <div class="icon-servicios"><i class="fa-solid fa-car-side"></i></div>
       </figure>
+    </section> -->
+
+    <!--------------------------DIVISOR DE SECCIONES---------------------------------------------------------------------------------------------->
+    <div class="wow animate__animated animate__fadeInTopLeft div-fancy ancho">
+      <div class="texto-div-fancy">
+        <p>Consulta nuestra variedad de opciones</p>
+        <h1>Entregando los mejores</h1>
+        <h2>Servicios</h2>
+      </div>
+
+      <img id="img-div-fancy2" src="img/png/divider.png" alt="" />
+      <img id="img-div-fancy" src="img/png/02.png" alt="" />
+    </div>
+
+    <!-- PESTAÑAS----------------------------------------------------------------------- -->
+
+    <section>
+      <div class="titulo">
+        <p>Nuestros momentos son para compartir contigo</p>
+        <h1>Ultimos Proyectos</h1>
+      </div>
+
+      <div class="sec-ul">
+        <ul class="tabs-t1 ancho">
+          <li><a href="#tab1">ALL PHOTOS</a></li>
+          <li><a href="#tab2">PLACES</a></li>
+          <li><a href="#tab3">LOVE</a></li>
+          <li><a href="#tab4">PARTYS</a></li>
+          <li><a href="#tab5">MOMENTS</a></li>
+        </ul>
+      </div>
     </section>
+
+    <section class="tabs_contenedor-t1 ancho">
+      <figure
+        class="tabs_contenido-t1 1 animate__animated animate__fadeInUp"
+        id="tab1"
+      >
+        <img src="img/places/foto1.jpg" alt="" />
+
+        <div class="fondo">
+          <figure class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </figure>
+          <h3></h3>
+          <p>
+            Permite conocerte lugares increibles y vivir tu boda de la mejor
+            manera
+          </p>
+          <a href="index.html"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </figure>
+
+      <figure
+        class="tabs_contenido-t1 2 animate__animated animate__fadeInUp size"
+        id="tab2"
+      >
+        <img src="img/places/foto3.jpg" alt="" />
+        <div class="fondo">
+          <figure class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </figure>
+          <h3></h3>
+          <p>Disfruta este día especial con una noche mágica</p>
+          <a href="index.html"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </figure>
+
+      <figure
+        class="tabs_contenido-t1 3 animate__animated aanimate__fadeInUp"
+        id="tab3"
+      >
+        <img src="img/places/foto4.jpg" alt="" />
+        <div class="fondo">
+          <figure class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </figure>
+          <h3></h3>
+          <p>Vive una balada inolvidable con nostros</p>
+          <a href="index.html"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </figure>
+
+      <figure
+        class="tabs_contenido-t1 4 animate__animated animate__fadeInUpBig"
+        id="tab4"
+      >
+        <img src="img/places/foto5.jpg" alt="" />
+        <div class="fondo">
+          <figure class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </figure>
+          <h3></h3>
+          <p>Toda la boda perfecta al alcance de tus manos</p>
+          <a href="index.html"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </figure>
+
+      <figure
+        class="tabs_contenido-t1 5 animate__animated animate__fadeInUp"
+        id="tab5"
+      >
+        <img src="img/places/foto2.jpg" alt="" />
+        <div class="fondo">
+          <figure class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </figure>
+          <h3></h3>
+          <p>Momentos unicos en familia</p>
+          <a href="index.html"
+            ><i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </figure>
+    </section>
+
+    <div class="btn ancho">
+      <a class="btn-footer" href="Contacto.html"
+        >CONTACTANOS <i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </div>
+
+    <!-- CARRUSEL DE FOTOS-------------------------------------------------- -->
+
+    <div id="slider1">
+      <div class="viewport">
+        <a class="buttons prev" href="#"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></a>
+        <a class="buttons next" href="#"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></a>
+
+        <ul class="overview">
+          <li>
+            <img src="img/shop/ramo3.jpg" />
+            <article class="articulo-presentacion">
+              <!-- <h2>Tenemos toda la capacitación & experiencia</h2> -->
+              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
+
+              <figure class="iconos-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </figure>
+
+              <!-- <div class="botones-play">
+                <a id="startslider" href="#"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a id="stopslider" href="#"
+                  ><i class="fa-solid fa-circle-pause"></i
+                ></a>
+              </div> -->
+
+              <figure class="decoracion-presentacion">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+
+              <figure class="decoracion-presentacion2">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+            </article>
+          </li>
+          <li>
+            <img src="img/shop/decoracion1.jpg" />
+            <article class="articulo-presentacion">
+              <!-- <h2>La boda que siempre has estado soñando</h2> -->
+              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
+              <figure class="iconos-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </figure>
+
+              <!-- <div class="botones-play">
+                <a id="startslider2" href="#"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a id="stopslider2" href="#"
+                  ><i class="fa-solid fa-circle-pause"></i
+                ></a>
+              </div> -->
+
+              <figure class="decoracion-presentacion">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+
+              <figure class="decoracion-presentacion2">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+            </article>
+          </li>
+
+          <li>
+            <img src="img/shop//fondo-ramos.jpg" />
+            <article class="articulo-presentacion">
+              <!-- <h2>En todos los momentos especiales</h2> -->
+              <h1>Bodas y eventos planeados para todo tipo de parejas</h1>
+              <figure class="iconos-footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </figure>
+
+              <!-- <div class="botones-play">
+                <a id="startslider3" href="#"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a id="stopslider3" href="#"
+                  ><i class="fa-solid fa-circle-pause"></i
+                ></a>
+              </div> -->
+
+              <figure class="decoracion-presentacion">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+
+              <figure class="decoracion-presentacion2">
+                <img src="img/png/decoracion1.png" alt="" />
+              </figure>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 
+    CURVAS ---------------------------------------------------------------------- -->
+
+    <div style="height: 150px; overflow: hidden">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-0.00,50.10 C222.16,225.50 349.20,-50.10 519.00,78.16 L500.00,150.33 L-0.00,150.33 Z"
+          style="stroke: none; fill: #edf3f8"
+        ></path>
+      </svg>
+    </div>
 
     <!---------------------------Boton subir---------------------------------------------------------------------------------------------->
 
@@ -219,7 +647,7 @@
 
     <!----------------------------------FOODER------------------------------------------------------------->
 
-    <footer class="ancho">
+    <footer>
       <article class="artic-footer">
         <figure class="img-footer"><img src="img/logo.png" alt="" /></figure>
         <p>
@@ -269,7 +697,7 @@
       </div>
     </footer>
 
-    <div class="parte-div ancho">
+    <div class="parte-div">
       <p>Aaron Enrique Chi Béjar</p>
 
       <figure class="iconos-footer">
@@ -319,6 +747,56 @@
         $(".titulo4").toggleClass("text");
       });
 
+      //CARRUSEL---------------------------------------------------------------------------------
+      $(document).ready(function () {
+        $("#slider1").tinycarousel({
+          interval: true,
+          animationTime: 2000,
+          intervalTime: 6000,
+        });
+
+        var slider1 = $("#slider1").data("plugin_tinycarousel");
+
+        // The start method starts the interval.
+
+        $("#startslider").click(function () {
+          slider1.start();
+
+          return false;
+        });
+
+        $("#startslider2").click(function () {
+          slider1.start();
+
+          return false;
+        });
+
+        $("#startslider3").click(function () {
+          slider1.start();
+
+          return false;
+        });
+        // The stop method stops the interval.
+
+        $("#stopslider").click(function () {
+          slider1.stop();
+
+          return false;
+        });
+
+        $("#stopslider2").click(function () {
+          slider1.stop();
+
+          return false;
+        });
+
+        $("#stopslider3").click(function () {
+          slider1.stop();
+
+          return false;
+        });
+      });
+
       //boton subir------------------------------------------------------------------------------
 
       // Obtener referencia al enlace
@@ -345,6 +823,104 @@
 
       //WOW-----------------------------------------------------------------------
       new WOW().init();
+    </script>
+
+    <!-- FUNCION DE MENU VISIBLE CON SCROLL--------------------------------------- -->
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("menu", window.scrollY > 0);
+      });
+    </script>
+
+    <script>
+      $(".slide-indicator").click(function () {
+        $(" .slide-indicator").removeClass("active"); //quita la clase "active"
+        $(this).addClass("active"); //Agrega la clase active al tab seleccionado
+        //$(".tabs_contenido-t1").hide(); //Oculta el contenido de la pestaña
+      });
+    </script>
+
+    <script>
+      //PESTAÑAS----------------------------------------------------------------
+      //$(".tabs_contenido-t1").hide(); //oculta todo el contenido
+      $("ul.tabs-t1 li:first").addClass("active").show(); //Activa el css del primer tab
+      $(".tabs_contenido-t1:first").show(); //muestra el conetenido del primer tab
+
+      //EVENTO CLICK AL BOTON
+      $("ul.tabs-t1 li").click(function () {
+        $(" ul.tabs-t1 li").removeClass("active"); //quita la clase "active"
+        $(this).addClass("active"); //Agrega la clase active al tab seleccionado
+        $(".tabs_contenido-t1").hide(); //Oculta el contenido de la pestaña
+
+        var activeTab = $(this).find("a").attr("href");
+        //$(activeTab).fadeIn(); //Desvanece el contenedor activo
+
+        if (activeTab === "#tab1") {
+          $(".tabs_contenido-t1").fadeIn();
+        }
+
+        if (activeTab === "#tab2") {
+          $("#tab1, #tab3, #tab4").fadeIn();
+        }
+
+        if (activeTab === "#tab3") {
+          $("#tab2, #tab5").fadeIn();
+        }
+
+        if (activeTab === "#tab4") {
+          $("#tab5, #tab3, #tab1").fadeIn();
+        }
+
+        if (activeTab === "#tab5") {
+          $("#tab1, #tab2").fadeIn();
+        }
+
+        return false;
+      });
+    </script>
+
+    <script>
+      //MODAL BOTON BUCAR------------------------------------------------------------------
+      var nodal2 = document.getElementById("nodal2");
+      var btnbucar = document.getElementById("icono-buscar");
+
+      var btnSearch = document.getElementById("btnsearch");
+
+      btnbucar.onclick = function () {
+        nodal2.style.display = "flex";
+      };
+
+      //para utizar todo el area del navegador para cerrar
+      window.onclick = function (event) {
+        if (event.target == nodal2) {
+          nodal2.style.display = "none";
+        }
+      };
+
+      const searchContainer = document.querySelector(".search-container");
+      const searchInput = document.querySelector('input[type="text"]');
+
+      searchContainer.addEventListener("click", function (event) {
+        // Cuando se hace clic en el contenedor de búsqueda, enfocar el campo de entrada
+        searchInput.focus();
+      });
+
+      //busquedas reales en google
+      btnSearch.addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          searchGoogle();
+        }
+      });
+
+      function searchGoogle() {
+        var searchTerm = btnSearch.value;
+        var encodedSearchTerm = encodeURIComponent(searchTerm);
+        var googleSearchUrl =
+          "https://www.google.com/search?q=" + encodedSearchTerm;
+        window.location.href = googleSearchUrl;
+      }
     </script>
   </body>
 </html>
