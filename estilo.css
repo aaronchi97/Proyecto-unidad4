@@ -1963,3 +1963,77 @@ html ul.tabs-t1 li.active a:hover {
 html ul.tabs-t1 li.active a {
   color: white;
 }
+
+/* USUARIOS-------------------------- */
+.user-cards-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* border: 1px red solid; */
+}
+.user-cards-contacto article {
+  width: 380px;
+  height: 370px;
+  border-radius: 10px 10px 0 0;
+  border: 1px rgb(199, 199, 199) solid;
+  overflow: hidden;
+}
+.user-cards-contacto article figure {
+  width: 100%;
+  position: relative;
+}
+.user-cards-contacto article figure img {
+  width: 100%;
+  object-fit: cover;
+}
+.user-cards-contacto-redes-s {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  position: absolute;
+  bottom: 100%;
+  /* color: var(--color-secundario2); */
+}
+.user-cards-contacto-redes-s a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  background-color: #008ffc;
+}
+.user-cards-contacto-redes-s a i {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  transition: all 0.5s;
+}
+.user-cards-contacto-redes-s a:hover i {
+  font-size: 25px;
+  color: var(--color-secundario);
+}
+.user-cards-contacto article:hover figure .redes-s {
+  top: 97%;
+  left: calc(50% - 80px);
+}
+.user-cards-contacto article:hover {
+  padding-bottom: 30px;
+  box-shadow: 0 0 10px rgb(126, 126, 126);
+}
+.user-cards-contacto article .user-cards-contacto-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
