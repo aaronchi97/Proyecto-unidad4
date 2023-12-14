@@ -955,6 +955,10 @@ iframe {
   padding: 20px;
   background-color: var(--color-fondo);
 }
+.fondo-form p {
+  width: 90%;
+  padding: 20px;
+}
 .acordeon_contenido {
   height: 150px;
 }
