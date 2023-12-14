@@ -320,7 +320,8 @@
   }
   .modal-content {
     width: 90%;
-    max-width: 800px;
+
+    /* max-width: 800px; */
     height: 240px;
     top: 50%;
     left: 44%;
@@ -485,5 +486,12 @@
     width: 380px;
     height: 250px;
     /* border: 1px solid blue; */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Estilos para pantalla móvil */
+  .modal-content {
+    background-color: transparent;
   }
 }
