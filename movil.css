@@ -42,9 +42,11 @@
     margin-right: 10px;
     font-size: 50px;
     cursor: pointer;
+    color: var(--color-secundario);
   }
   #barramenu:hover {
-    color: var(--color-secundario2);
+    /* color: var(--color-secundario2); */
+    color: black;
   }
   .logoPrincipal {
     width: 180px;
